@@ -21,7 +21,7 @@
 
     .header-container {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       max-width: 900px;
       margin: 0 auto;
       gap: 30px;
@@ -33,8 +33,8 @@
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #00bcd4;
-      box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+      border: 3px solid #ff4d4d;
+      box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
     }
 
     .intro {
@@ -50,11 +50,108 @@
     .intro p.subtitle {
       font-size: 1.2em;
       color: #aaa;
-      margin: 0 0 10px 0;
+      margin: 0 0 15px 0;
+    }
+
+    /* ---------- Resume Button ---------- */
+    .resume-btn {
+      display: inline-block;
+      background-color: #ff4d4d;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background-color: transparent;
+      color: #ff4d4d;
+      border: 2px solid #ff4d4d;
     }
 
     section {
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background-color:
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      color: #ff4d4d;
+      border-bottom: 2px solid #ff4d4d;
+      padding-bottom: 5px;
+    }
+
+    a {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 700px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .intro h1 {
+        font-size: 2em;
+      }
+
+      .profile-pic {
+        width: 130px;
+        height: 130px;
+      }
+
+      .resume-btn {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="profile.jpg" alt="Kara Tayag" class="profile-pic">
+      <div class="intro">
+        <h1>👋 Hi, I’m Kara Tayag</h1>
+        <p class="subtitle">Aspiring Data Analyst | Google Data Analytics Certificate</p>
+        <p>
+          I’m passionate about using data to uncover insights and tell meaningful stories that drive informed decisions. 
+          With skills in <strong>Excel</strong>, <strong>SQL</strong>, and <strong>data visualization</strong>, I’m eager to apply analytical thinking and creativity to real-world challenges.
+        </p>
+        <a href="Kara_Tayag_Resume.pdf" class="resume-btn" target="_blank">📄 Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>SQL Project:</strong> <em>Coming Soon</em></li>
+      <li><strong>Caps
