@@ -13,110 +13,48 @@
       padding: 0;
     }
 
+    /* ---------- Header ---------- */
     header {
-      text-align: center;
-      padding: 60px 20px 20px 20px;
       background-color: #111;
+      padding: 40px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
     .profile-pic {
-      width: 130px;
-      height: 130px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #00bcd4;
       box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
-      margin-bottom: 15px;
     }
 
-    h1 {
+    .intro {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .intro h1 {
       font-size: 2.5em;
-      margin-bottom: 10px;
+      margin: 0 0 10px 0;
     }
 
-    p.subtitle {
+    .intro p.subtitle {
       font-size: 1.2em;
       color: #aaa;
+      margin: 0 0 10px 0;
     }
 
     section {
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #111;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    h2 {
-      color: #00bcd4;
-      border-bottom: 2px solid #00bcd4;
-      padding-bottom: 5px;
-    }
-
-    a {
-      color: #00bcd4;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin: 10px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <!-- Add your profile photo here -->
-    <img src="profile.jpg" alt="Kara Tayag" class="profile-pic">
-    <h1>👋 Hi, I’m Kara Tayag</h1>
-    <p class="subtitle">Aspiring Data Analyst | Google Data Analytics Certificate</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m Kara Tayag, an aspiring Data Analyst with a <strong>Google Data Analytics Certificate</strong>. 
-      I’m passionate about using data to uncover insights and tell meaningful stories that drive informed decisions. 
-      With growing skills in <strong>Excel</strong>, <strong>SQL</strong>, and <strong>data visualization</strong>, 
-      I’m eager to apply analytical thinking and creativity to real-world challenges in data-driven environments.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>SQL Project:</strong> <em>Coming Soon</em></li>
-      <li><strong>Capstone Project:</strong> <em>Coming Soon</em></li>
-      <li><strong>Excel Project:</strong> <em>Coming Soon</em></li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>
-      📧 <a href="mailto:karaltayag@gmail.com">karaltayag@gmail.com</a><br>
-      💼 <a href="https://www.linkedin.com/in/kara-l-tayag/" target="_blank">LinkedIn Profile</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2025 Kara Tayag | Built with ❤️ using GitHub Pages</p>
-  </footer>
-</body>
-</html>
+      background-color:
