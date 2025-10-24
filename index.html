@@ -19,6 +19,16 @@
       background-color: #111;
     }
 
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+      box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+      margin-bottom: 15px;
+    }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -72,6 +82,8 @@
 </head>
 <body>
   <header>
+    <!-- Add your profile photo here -->
+    <img src="profile.jpg" alt="Kara Tayag" class="profile-pic">
     <h1>👋 Hi, I’m Kara Tayag</h1>
     <p class="subtitle">Aspiring Data Analyst | Google Data Analytics Certificate</p>
   </header>
@@ -86,32 +98,22 @@
     </p>
   </section>
 
-    <section id="projects" class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>SQL Project</h3>
-          <p><em>Coming Soon</em></p>
-        </div>
-        <div class="project-card">
-          <h3>Capstone Project</h3>
-          <p><em>Coming Soon</em></p>
-        </div>
-        <div class="project-card">
-          <h3>Excel Project</h3>
-          <p><em>Coming Soon</em></p>
-        </div>
-      </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>SQL Project:</strong> <em>Coming Soon</em></li>
+      <li><strong>Capstone Project:</strong> <em>Coming Soon</em></li>
+      <li><strong>Excel Project:</strong> <em>Coming Soon</em></li>
+    </ul>
+  </section>
 
-    <section id="contact" class="container">
-      <h2>Contact Me</h2>
-      <ul>
-        <li><a href="mailto:karaltayag@gmail.com">📧 karaltayag@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/kara-l-tayag/" target="_blank">🔗 LinkedIn Profile</a></li>
-      </ul>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      📧 <a href="mailto:karaltayag@gmail.com">karaltayag@gmail.com</a><br>
+      💼 <a href="https://www.linkedin.com/in/kara-l-tayag/" target="_blank">LinkedIn Profile</a>
+    </p>
+  </section>
 
   <footer>
     <p>© 2025 Kara Tayag | Built with ❤️ using GitHub Pages</p>
