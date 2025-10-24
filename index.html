@@ -53,7 +53,6 @@
       margin: 0 0 15px 0;
     }
 
-    /* ---------- Resume Button ---------- */
     .resume-btn {
       display: inline-block;
       background-color: #ff4d4d;
@@ -72,7 +71,7 @@
     }
 
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background-color: #111;
@@ -84,6 +83,7 @@
       color: #ff4d4d;
       border-bottom: 2px solid #ff4d4d;
       padding-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     a {
@@ -109,6 +109,59 @@
       padding: 20px;
       font-size: 0.9em;
       color: #777;
+    }
+
+    /* ---------- Project Cards ---------- */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #000;
+      border: 2px solid #ff4d4d;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(255, 77, 77, 0.4);
+    }
+
+    .project-card h3 {
+      color: #ff4d4d;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #aaa;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .project-card a.btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #ff4d4d;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .project-card a.btn:hover {
+      background-color: transparent;
+      color: #ff4d4d;
+      border: 2px solid #ff4d4d;
     }
 
     /* ---------- Responsive ---------- */
@@ -152,11 +205,23 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>SQL Project:</strong> <em>Coming Soon</em></li>
-      <li><strong>Capstone Project:</strong> <em>Coming Soon</em></li>
-      <li><strong>Excel Project:</strong> <em>Coming Soon</em></li>
-    </ul>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>SQL Project</h3>
+        <p>Analyze data sets and generate insights using SQL queries. Includes filtering, joins, and aggregations.</p>
+        <a href="#" class="btn" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Capstone Project</h3>
+        <p>A comprehensive data analysis project integrating multiple tools to solve a real-world problem.</p>
+        <a href="#" class="btn" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Excel Project</h3>
+        <p>Demonstrates data cleaning, pivot tables, and visualization techniques in Excel.</p>
+        <a href="#" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
